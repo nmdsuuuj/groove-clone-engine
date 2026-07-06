@@ -1,0 +1,137 @@
+.master-clock-display {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.clock-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.clock-bar-number {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.clock-bar-number span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+.clock-beat-time {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.clock-beat-time span {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+.clock-beat-time small {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+.clock-controls {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.bpm-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bpm-control label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bpm-control input {
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+}
+
+.bpm-control input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.play-control {
+  flex: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-play {
+  background: #00aa00;
+  color: #000;
+}
+
+.btn-play:active {
+  background: #00ff00;
+  transform: scale(0.98);
+}
+
+.btn-stop {
+  background: #aa0000;
+  color: #fff;
+}
+
+.btn-stop:active {
+  background: #ff0000;
+  transform: scale(0.98);
+}
+
+.clock-status {
+  text-align: center;
+  font-size: 12px;
+}
+
+.status-running {
+  color: #00ff00;
+  font-weight: 600;
+}
+
+.status-stopped {
+  color: #888;
+  font-weight: 400;
+}

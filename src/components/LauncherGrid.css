@@ -1,0 +1,104 @@
+.launcher-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.launcher-bank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.bank-btn {
+  flex: 0 0 48px;
+  height: 48px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bank-btn:active {
+  background: #333;
+  border-color: #666;
+}
+
+.bank-indicator {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.launcher-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  aspect-ratio: 1;
+  padding: 0;
+}
+
+.launcher-pad {
+  aspect-ratio: 1;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.launcher-pad:hover {
+  background: #222;
+  border-color: #555;
+}
+
+.launcher-pad:active {
+  background: #00aa00;
+  border-color: #00ff00;
+  color: #000;
+  transform: scale(0.95);
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.4);
+}
+
+.launcher-id {
+  position: relative;
+  z-index: 1;
+  font-family: 'Courier New', monospace;
+}
+
+.launcher-info {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .launcher-grid {
+    gap: 8px;
+  }
+
+  .launcher-pad {
+    border-width: 1px;
+    font-size: 14px;
+  }
+}
